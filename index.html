@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 – Dynamic Web Fundamentals – Tolulope Adetunji Adeola</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Tolulope Adetunji Adeola. Personal profile, web dev resources, and project links." />
+  <meta name="author" content="Tolulope Adetunji Adeola" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lora&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Tolulope Adetunji Adeola</span></h2>
+    <nav>
+      <a href="https://www.linkedin.com/in/">LinkedIn</a>
+      <a href="https://byupw.instructure.com/">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card-container">
+      <div class="card about-me">
+        <h2>About Me</h2>
+        <div class="card-content reverse">
+          <div>
+            <p>My name is Tolulope Adetunji Adeola, a BYU-Idaho student currently taking WDD 131: Dynamic Web Fundamentals. I’m passionate about web development and enjoy exploring new technologies, programming languages, and frameworks to enhance my skills. In my free time, I seek opportunities to grow and connect, and I welcome collaboration or questions via LinkedIn or email.</p>
+            <h3>Lagos, Nigeria</h3>
+            <hr />
+            <div class="location-info">
+                <div class="flag-container">
+                    <img src="images/nigeria-flag.png" alt="Official Flag of Nigeria" />
+                    <p><em>Official Flag of Nigeria</em></p>
+                </div>
+                <div>
+                    <p>
+                        Nigeria is the most populous country in Africa and one of the fastest-growing nations in the world. Located along the Atlantic coast in West Africa, it is a major economic and cultural hub known for its rich diversity and natural resources. From its vibrant traditions and dynamic cities to its thriving tech industry and iconic landmarks like Zuma Rock and the Niger River, Nigeria showcases a blend of heritage and modern development.
+                    </p>
+                </div>
+            </div>
+          </div>
+          <img src="images/profile.jpg" alt="My Photo" class="profile-img" />
+        </div>
+      </div>
+
+      <div class="card resources">
+        <h2>Web Dev Resources</h2>
+        <div class="card-content">
+          <ul>
+            <li><a href="https://dev.to">Dev.to Community</a></li>
+            <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+            <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+            <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+            <li><a href="#">Image Placeholder</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌸 Tolulope Adetunji Adeola 🌍 Lagos, Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script>
+            // Set current year
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+            // Set last modified date
+            document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+        </script>
+</body>
+</html>
+
+</html>

@@ -1,0 +1,176 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #222;
+}
+
+header {
+  background-color: #0d3b66;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+header h2 {
+    padding-top: 20px;
+}
+
+header .highlight {
+  color: #fbff00;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #333;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Main Content Layout */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background: #fdfdfd;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.about-me h2,
+.resources h2 {
+  background-color: #0d3b66;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 6px 6px 0 0;
+  margin: -1rem -1rem 1rem -1rem;
+  font-size: 1.2rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row-;
+  gap: 1rem;
+}
+
+.card-content img {
+  display: flex;
+  width: 140px;
+  height: 200px;
+  border-radius: 2px;
+}
+
+.card-content.reverse {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card-content.reverse h3 {
+  text-align: center;
+}
+
+.location-info {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.location-info img {
+  display: flex;
+  margin-top: 2rem;
+  width: 200px;
+  height: auto;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+
+.flag-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flag-container p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+
+.resources ul {
+  padding-left: 1.2rem;
+}
+
+.resources ul li {
+  margin-bottom: 0.5rem;
+}
+
+.resources a {
+  color: #4b0082;
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0d3b66;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+
+#lastModified {
+  color: #b0ff33;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card-content,
+  .card-content.reverse {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .location-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
