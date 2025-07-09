@@ -1,0 +1,29 @@
+.navigation {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: right;
+    align-items: space-between;
+    position: static;
+    background-color: #004d40;
+}
+
+.navigation a {
+  border: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-right: 0;
+  flex-shrink: 0;
+}
+
+#menu {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
