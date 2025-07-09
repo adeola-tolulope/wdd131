@@ -1,4 +1,3 @@
-
 const input = document.querySelector('#favchap');
 const button = document.querySelector('#addButton');
 const list = document.querySelector('#list');
