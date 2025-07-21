@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Tolulope Adetunji Adeola" />
+        <title>WDD 131: Dynamic Web Fundamental - Discover China</title>
+        <link rel="stylesheet" href="styles/place.css" />
+        <script src="scripts/place.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1>China</h1>
+    </header>
+
+    <main>
+        <div class="hero-image">
+            <img src="images/hero-large.webp" alt="Scenic view of China" min-width="100px" />
+        </div>
+        <section class="data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area: </strong><span>9,596,961 sq km</span></li>
+                <li><strong>Population: </strong> <span>1,416,092,434</span></li>
+                <li><strong>Capital: </strong> <span>Beijing</span></li>
+                <li><strong>Languages: </strong> <span>Mandarin (Standard Chinese)</span></li>
+                <li><strong>Currency: </strong> <span> Yuan (Renminbi)</span></li>
+                <li><strong>Time Zone: </strong> <span>UTC+8</span></li>
+                <li><strong>Calling Code: </strong> <span>+86</span></li>
+                <li><strong>Internet TLD: </strong> <span>.cn</span></li>
+            </ul>
+        </section>
+
+        <section class="weather-card">
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperature: </strong> <span>25℃</span></li>
+                <li><strong>Conditions: </strong> <span>Partly Cloudy</span></li>
+                <li><strong>Wind: </strong> <span>10 km/h</span></li>
+                <li><strong>Wind Chill: </strong> <span>24.2℃</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Adeola Tolulope Adetunji 🌍 Nigeria </br>
+            Last Modified: <span id="lastModified"></span></p>
+        </p>
+    </footer>
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>
+

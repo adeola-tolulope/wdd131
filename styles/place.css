@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: #c8102e;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+
+}
+
+main {
+    position: relative;
+    background-image: url('hero-medium.webp');
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    min-width: 600px;
+}
+
+.data-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 260px;
+    padding: 0.5rem 0.5rem 1rem 0rem;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+.data-card h2 {
+    background-color: #237343;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    list-style: none;
+
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.data-card ul li {
+    margin: 0.5rem 0 0 1rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 220px;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.weather-card h2 {
+    background-color: #237343;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-card h2::after {
+    content: "🌤️";
+}
+
+.weather-card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #c8102e;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 600px) {
+    .data-card, .weather-card {
+        position: static;
+        width: 100%;
+        margin-bottom: 1rem;
+        
+    } 
+    .data-card {
+        border-top: 4px solid #c8102e;
+    } 
+    .data-card, .weather-card {
+        position: block;
+        width: 100%;
+        margin-bottom: 1rem;
+        align-content: center;
+        ;
+    }
+
+    .data-card h2, .weather-card h2 {
+        align-items: center;
+        background-color:#ffffff;
+        color: black;
+        justify-content: center;
+    }
+
+  
+
+    .weather-card h2::after {
+        content: url('images/weather.svg');
+        max-width: 100px;
+        position: absolute;
+        margin-top: 3rem;   
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    main {
+        background-position: top;
+        
+    }
+
+    .hero-image {
+        display: flex;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .data-card h2, .weather-card h2 {
+        align-items: center;
+        background-color:#ffffff;
+        color: black;
+    }
+
+    .weather-card h2::after {
+        content: "🌤️";
+        max-width: 100px;
+        position: absolute;
+        align-items: center;
+    }
+
+    main {
+        background-position: top;
+        
+    }
+
+    .hero-image {
+        display: flex;
+        margin-bottom: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+    }
+        
+
+    header {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        
+    }
+
+    .data-card {
+        border-top: 4px solid #c60c30;
+    }
+
+    .data-card, .weather-card {
+        background-color: #fff;
+        padding: 1rem;
+        text-align: center;
+        color: black;
+    }
+
+    .data-card h2, .weather-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .data-card ul, .weather-card ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .data-card li, .weather-card li {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 1rem;
+        padding: 0.25rem 0;
+       
+    }
+
+    .data-card strong, .weather-card strong {
+        font-weight: bold;
+        text-align: right;
+        flex: 1;
+        padding-right: 0.5rem;
+    }
+
+    .data-card ul span, .weather-card ul span {
+        text-align: left;
+        flex: 1;
+    }
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }   
+}
