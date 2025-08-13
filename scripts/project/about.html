@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitatech Academy | About & Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Kitatech Academy</div>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="about.html" class="active">About & Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>About & Contact</h1>
+    </section>
+
+    <section class="about">
+        <h2>About Kitatech Academy</h2>
+        <p>Kitatech Academy is dedicated to training the next generation of solar and power system experts. With industry-grade equipment and passionate instructors, we prepare students for a sustainable career in renewable energy.</p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Kitatech Academy | Solar & Power Systems | Nigeria 🇳🇬</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+            document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+</html>
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #01a709;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+     text-decoration: hover;
+    font-weight: bold;
+    color: white;
+    background: #ff9800;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.hero {
+    background-image: url("solar.webp");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff9800;
+    padding: 0.7rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.feature {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.page-header {
+    background: #ff9800;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.program-list, .about, .contact {
+    padding: 2rem;
+}
+
+.contact form {
+    display: grid;
+    gap: 1rem;
+    max-width: 400px;
+}
+
+.contact input, .contact textarea {
+    padding: 0.7rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact button {
+    padding: 0.7rem;
+    font-size: 1rem;
+    background: #01a709;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.contact button:hover {
+    background: #ff9800;
+}
+footer {
+    background: #01a709;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    console.log("Kitatech Academy site loaded successfully.");
+});
+
+</script>
